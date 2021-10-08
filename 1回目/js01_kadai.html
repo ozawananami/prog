@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小澤七海のプロフィールページ</title>
+    <style>
+        body{
+            font-family: '游ゴシック', 'ヒラギノ角ゴシック', 'ヒラギノ角ゴ ProN W3', sans-serif;
+        }
+        h1{
+            color:#eaf5f4;
+            background: #6db7e7;
+            text-align: center;
+            border:10px double #eaf5f4;
+        }
+        h2{
+            border-left: solid 10px #6db7e7;
+            padding-left: 10px;
+        }
+        h3{
+            font-size: 20px;
+            text-align: center;
+        }
+        .fuku{
+            display: inline-block;
+            border-radius: 5px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px 10px 0px 0px;
+            box-shadow: 0 2px 4px rgba(0,0,0,.05);
+            transition: 150ms 0s ease-in-out;
+        }
+        .fuku:hover{
+            box-shadow: 0 5px 10px rgba(0,0,0,.50);
+        }
+        .fukus{
+            position: absolute;
+            display: inline-block;
+            margin: 50px 0px 0px 50px;
+            border: 3px dashed rgba(109,183,231, 0.4);
+            border-radius: 15px;
+            opacity:0;
+            animation:fukus 2.5s 1s 1 forwards;
+            -webkit-animation:fukus 2.5s 1s 1 forwards;
+            -moz-animation:fukus 2.5s 1s 1 forwards;
+        }
+        @keyframes fukus{
+        0%{opacity:0; transform:translate(0,200px);}
+        10%{opacity:1; transform:translate(0,-50px);}
+        15%{opacity:1; transform:translate(0,0px);}
+        20%{opacity:1; transform:translate(0,-20px);}
+        25%{opacity:1; transform:translate(0,0px);}
+        100%{opacity:1; transform:translate(0,0px);}
+        }
+        @-webkit-keyframes fukus{
+        0%{opacity:0; -webkit-transform:translate(0,200px);}
+        10%{opacity:1; -webkit-transform:translate(0,-50px);}
+        15%{opacity:1; -webkit-transform:translate(0,0px);}
+        20%{opacity:1; -webkit-transform:translate(0,-20px);}
+        25%{opacity:1; -webkit-transform:translate(0,0px);}
+        100%{opacity:1; -webkit-transform:translate(0,0px);}
+        }
+        @-moz-keyframes fukus{
+        0%{opacity:0; -moz-transform:translate(0,200px);}
+        10%{opacity:1; -moz-transform:translate(0,-50px);}
+        15%{opacity:1; -moz-transform:translate(0,0px);}
+        20%{opacity:1; -moz-transform:translate(0,-20px);}
+        25%{opacity:1; -moz-transform:translate(0,0px);}
+        100%{opacity:1; -moz-transform:translate(0,0px);}
+        }
+        .fukus2{
+            margin: 20px 40px 50px 50px;
+        }
+        .nanami{
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            width: 350px;
+            height: 450px;
+            object-fit: cover;
+            margin-top: 40px;
+            margin-bottom: 50px;
+            box-shadow: 0 2px 4px rgba(0,0,0,.05);
+            transition: 150ms 0s ease-in-out;
+        }
+        .nanami:hover{
+            box-shadow: 0 5px 10px rgba(0,0,0,.50);
+
+        }
+        .introduction{
+            position: relative;
+            display: inline-block;
+            padding-left: 12%;
+            padding-bottom: 70px;
+        }
+        .intro{
+            padding: 20px;
+            border: 3px dashed rgba(109,183,231, 0.4);
+            border-radius: 15px;
+            transform-origin:top;
+            -webkit-transform-origin:top;
+            -moz-transform-origin:top;
+            animation:intro ease-in-out 3s infinite alternate;
+            -webkit-animation:intro ease-in-out 3s infinite alternate;
+            -moz-animation:intro ease-in-out 3s infinite alternate;
+            }
+            @keyframes intro{
+            0%{transform: rotate(2deg);}
+            100%{transform: rotate(-2deg);}
+            }
+            @-webkit-keyframes intro{
+            0%{-webkit-transform: rotate(2deg);}
+            100%{-webkit-transform: rotate(-2deg);}
+            }
+            @-moz-keyframes intro{
+            0%{-moz-transform: rotate(2deg);}
+            100%{-moz-transform: rotate(-2deg);}
+            }
+        }
+        footer {
+            background: linear-gradient(360deg, #6db7e7, #FFFFFF);
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>小澤七海のプロフィールページ</h1>
+    <div class="introduction">
+        <img src="nanami.jpg" alt="nanamiの顔写真" class="nanami">
+        <div class="intro">
+            <h2>プロフィール</h2>
+            <p>
+                出身：千葉県<br>
+                趣味：ゲーム、音楽を聴くこと<br>
+                好物：寿司、ラーメン<br>
+            </p>
+            <h2>ひとこと</h2>
+            <p>
+                ゲームが好きで、ポケモン、モンハン、どう森、マイクラなどいろいろやります。<br>
+                3Dモデリングをやっていて、学校ではデザイン中心に学びたいと考えています。<br>
+                半年間よろしくお願いします！<br>
+            </p>
+        </div>
+    </div>
+    <div class= fukus>
+        <h3>🐾小澤家のペット🐾</h3>
+        <div class="fukus2">
+            <img src="fuku1.jpg" alt="ふく１" class="fuku">
+            <img src="fuku2.jpg" alt="ふく２" class="fuku">
+            <br>
+            <img src="fuku3.jpg" alt="ふく３" class="fuku">
+            <img src="fuku4.jpg" alt="ふく４" class="fuku">
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+</body>
+</html>
