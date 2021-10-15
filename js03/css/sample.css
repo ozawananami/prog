@@ -1,0 +1,50 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+}
+header{
+    background-color: #fff;
+    text-align: center;
+}
+main{    
+}
+div{
+    position: relative;
+}
+p{
+    position:absolute;
+    width: 300px;
+    height: 150px;
+    border-radius: 25px;
+    font-size:200%;
+    text-align: center;
+    padding-top: 80px;
+    margin: 90px 150px 100px 150px;
+}
+img{
+    width: 180px;
+    height: 200px;
+}
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    text-align: center;
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #FFF;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+}
+
+li:hover{
+    background: rgba(0, 0, 0, 0.1);
+    color:#fff;
+    box-shadow: 0px;
+}
