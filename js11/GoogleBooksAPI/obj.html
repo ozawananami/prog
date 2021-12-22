@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const o1 = {
+            name:"oza",
+            email:"test@tet.jp",
+            address:"Tokyo"
+        };
+        //JSON文字列（オブジェクトをテキスト化）
+        const json = JSON.stringify(o1);
+        localStorage.setItem("OBJ",json);
+        const val = localStorage.getItem("OBJ");
+        const obj = JSON.parse(val);
+        console.log(val);
+
+    </script>
+    
+</body>
+</html>
